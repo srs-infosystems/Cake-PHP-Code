@@ -1,0 +1,42 @@
+SYSTEM REQUIREMENTS:
+PHP 5.x
+MySQL 5.x
+Apache 2.x
+Cakephp - 1.3.8
+
+INSTALLATION:
+
+1) Upload all the project files on the root folder of your PHP server
+2) Install the database on your SQL server. The SQL dump is present in the file named "sql" in the root folder "bestjokes"
+3) Define the database connection variable, $default, in : /app/config/database.php
+   - reset the following fields: host, login, password, database, prefix (if any)
+4) Define the base URL for the site, reset the constant variable, BASE_URL, in : /app/config/core.php
+5) That's it. You are ready to use the site.
+
+
+WORKING:
+
+1) The homepage, is used, to list all the Jokes from the database.
+2) Facility to sort the jokes results, on the basis of, Title, Author and Content.
+   - Simply click on the table list headings
+3) The user can perform following 3 operations:
+   - Add new jokes
+   - Edit the already existing jokes
+   - Delete jokes
+
+
+CHANGELOGS:
+
+1) /app/controller/jokes_controller.php		- main code to control the flow
+2) /app/models/joke.php				- define the only model used for the test assignment
+3) /app/views/jokes/add_index.ctp		- listing of all the jokes
+4) /app/views/jokes/add_new_joke.ctp		- add new joke
+5) /app/views/jokes/edit_joke.ctp		- edit the joke data
+
+6) /app/webroot/css/style.css			- styling
+7) /app/webroot/css/validationEngine.jquery.css - styling
+
+8) /app/webroot/js/jquery.js			- jquery file
+9) /app/webroot/js/jquery.validationEngine.js   - js validation
+
+10) /app/webroot/img/...			- all the required images are present here
